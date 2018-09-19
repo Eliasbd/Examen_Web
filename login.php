@@ -24,8 +24,17 @@
     <label for="exampleInputPassword1">Contraseña</label>
     <input type="password" class="form-control" name="l-contraseña" id="contraseña" placeholder="Ingrese su Contraseña">
   </div>
-  
+  <div class="boton">
   <button type="submit" class="btn btn-primary w-100 ">Iniciar Sesion</button>
+
+  </div>
+ 
+   <div class="clic">
+  <a href="index.php">Regresar</a>
+
+ </div>
+  
+  
 </form>
 </body>
 </html>

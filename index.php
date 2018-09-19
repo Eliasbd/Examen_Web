@@ -38,6 +38,11 @@
  <div class="boton text-center">
  <button type="submit" class="btn btn-primary ">Registrarse</button>
  </div>
+
+ <div class="clic">
+<a href="login.php">Ya tienes una cuenta</a>
+
+ </div>
   
 </form>
 </div>
