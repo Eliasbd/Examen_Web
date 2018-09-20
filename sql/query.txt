@@ -1,0 +1,9 @@
+CREATE DATABASE bdregistros;
+
+CREATE TABLE maestros( 
+	id int not null, 
+	nombre varchar (30) NOT NULL, 
+	apellido varchar (30), 
+	correo varchar(30), 
+	contrasenia varchar (8) NOT NULL 
+)
