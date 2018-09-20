@@ -31,7 +31,7 @@
  </div>
  <div class="clic">
 
- <a href="registronotas.php">Regresar</a>
+ <a href="index.php">Regresar</a>
  </div>
   
 </form>

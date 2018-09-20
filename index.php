@@ -40,7 +40,7 @@
  </div>
  <div class="clic">
 
- <a href="login.php">Ya tengo Una cuenta</a>
+ <a href="log.php">Ya tengo Una cuenta</a>
  </div>
   
 </form>
