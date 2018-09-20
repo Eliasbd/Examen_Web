@@ -12,7 +12,7 @@
 
 <div class="container border border-primary p-4 w-50">
 
-<form>
+<form action = "insertar.php" method = "POST">
 <div class="titulo text-center ">
 <h1>Registro de Maestros</h1>
 </div>
@@ -37,11 +37,6 @@
   </div>
  <div class="boton text-center">
  <button type="submit" class="btn btn-primary ">Registrarse</button>
- </div>
-
- <div class="clic">
-<a href="login.php">Ya tienes una cuenta</a>
-
  </div>
   
 </form>
