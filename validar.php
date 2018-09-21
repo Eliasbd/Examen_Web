@@ -12,7 +12,7 @@ $resultado = mysqli_query($conexion , $consultar);
 $filas = mysqli_num_rows($resultado);
 
 if($filas>0){
-    header("Location:registradonotas.php");
+    header("Location:registronotas.php");
 }else{
     echo  "error en la autentificacion";
 }
