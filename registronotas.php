@@ -1,7 +1,5 @@
 <?php
-
-
-
+      
 ?>
 
 
@@ -15,13 +13,37 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <title>Registro de Notas</title>
+    <script type="text/javascript">
+      
+     function sumar(){
+      var num = document.f1.ip.value;
+      var n2 = document.f1.iip.value;
+      var n3 = document.f1.iiip.value;
+      var n4 = document.f1.ivp.value;
+
+     
+    
+      var res = (parseInt(num) + parseInt(n2)+ parseInt(n3)+ parseInt(n4))/4;
+
+document.f1.prom.value = res;
+
+
+
+     
+     }
+         
+
+  </script>
   
  
 </head>
 <body class="bg-secondary  p-5 "> 
         <form class="p-4  bg-light rounded" >
+        <a href="log.php" class="btn btn-danger mb-2">Salir</a>
+        <a href="tabla.php" class="btn btn-info mb-2">Mostrar Alumnos</a>
         <div class=" text-center h5">
         <img src="img/logo.png ">
+       
      <caption>INSTITUTO EVANGÉLICO HOSANNA</caption>
      
      <br>
@@ -32,11 +54,11 @@
      
      
     </form> 
-<form action = "alum.php" method = "POST">
+<form action = "alum.php" method = "POST" name = "f1">
 
     <p>DATOS DEL (DE LA) ALUMNO (A)</p>
     <br>
-    <input type="text" class="form-control" name = "nombre" id="name" aria-describedby="emailHelp" placeholder="Ingrese el nombre completo del alumno" >
+    <input type="text" class="form-control" name = "nombre" id="name" aria-describedby="emailHelp" placeholder="Ingrese el nombre completo del alumno"  required >
     <br>
     <p>DATOS DE LA INSTITUCION</p>
     <a href="#">Jardin,Escuela e Instituto Hosanna</a>
@@ -66,15 +88,13 @@
     <div class="agregar1" id="agregar">
 
     <tr id="fila" class="selected">
-      <th ><input type="text" name="asignatura" id="asignatura-0"></th>
-      <td><input type="text" name="ip"id="IP-0"></td>
-      <td><input type="text" name="iip" class="w-100" id="IIP-0"></td>
-      <td><input type="text" name="iiip" class="w-100" id="IIIP-0"></td>
-      <td><input type="text" name="ivp" class="w-100" id="IVP-0"></td>
-      <td><input type="text" name="prom" class="w-100" id="promedio-0"><p><?php
-    suma();
-      ?>
-      </p></td>
+      <th ><input type="text" name="asignatura" id="asignatura-0"  required ></th>
+      <td><input type="text" name="ip"id="IP-0" OnKeyUp = "sumar()"  required></td>
+      <td><input type="text" name="iip" class="w-100" id="IIP-0" OnKeyUp = "sumar()"  required></td>
+      <td><input type="text" name="iiip" class="w-100" id="IIIP-0" OnKeyUp = "sumar()"  required></td>
+      <td><input type="text" name="ivp" class="w-100" id="IVP-0" OnKeyUp = "sumar() "  required></td>
+      <td><input type="text" name="prom" class="w-100" id="promedio-0"  required >
+      </td>
     </tr>
 
     
@@ -83,7 +103,7 @@
  
 </table>
 
-<button  class="btn btn-primary mb-2 row" id = "plus">Mas</button>
+<button  class="btn btn-primary mb-2 row" id = "plus" onclick = "call()">Mas</button>
 
 
   <div class="form-group row ">
@@ -124,14 +144,9 @@
   </div>
   </div>
   <form class="container">
-  <h6 class="text-center">RESULATDOS DE EXAMENES DE RECUPERACION (SI ES NECESARIO)<h6>
-  <div class="form-group row">
-    <label for="exampleInputEmail1">ASIGNATURAS</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>
   
-  <button type="submit" class="btn btn-primary">PROMEDIO FINAL DE GRADO</button>
+  
+ <!-- <button type="submit" class="btn btn-primary">PROMEDIO FINAL DE GRADO</button> -->
 <br>
   <div class="form-group row">
     <label for="exampleFormControlTextarea1">OBSERVACIONES</label>
@@ -159,6 +174,8 @@
 
 </body>
 </html>
+
+
 
  <script src="js/jquery-3.3.1.slim.min"></script>
  <script src="js/js.js"></script>

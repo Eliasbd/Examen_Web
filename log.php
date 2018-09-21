@@ -31,7 +31,7 @@
  </div>
  <div class="clic">
 
- <a href="index.php">Regresar</a>
+ <a href="index.php">No tienes una cuenta?</a>
  </div>
   
 </form>
